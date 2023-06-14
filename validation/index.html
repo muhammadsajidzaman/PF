@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="input-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            id="contact-fname"
+            onkeyup="validatefname()"
+          />
+          <span id="fname-error"> </span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone No.</label>
+          <input type="tel" placeholder="123 456 7890"
+          id="contact-phone"
+            onkeyup="validatephone()" />
+          <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email Id</label>
+          <input type="email" placeholder="Enter Email"
+          id="contact-email"
+          onkeyup="validateemail()" />
+          <span id="email-error"></span>
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter Password"
+          id="contact-password"
+          onkeyup="validatepassword()"
+           />
+          <span id="password-error"></span>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Degree</button>
+          <div class="dropdown-content">
+            <a href="#">Bachelor</a>
+            <a href="#">Master</a>
+            <a href="#">Ph D</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn1">Years</button>
+          <div class="dropdown-content">
+            <a href="#">4</a>
+            <a href="#">2</a>
+            <a href="#">8</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn2">type</button>
+          <div class="dropdown-content">
+            <a href="#">ordianry</a>
+            <a href="#">N/A</a>
+            <a href="#">N/A</a>
+          </div>
+        </div>
+
+        <button class="reg" onclick="validateform()">Register </button>
+        <span id="reg-error"></span>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
